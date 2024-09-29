@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Attendance System</title>
+</head>
+<body>
+    <h1>Welcome to the Attendance System</h1>
+    <a href="{{ url_for('register') }}">Register</a>
+    <a href="{{ url_for('capture') }}">Capture Attendance</a>
+
+    <div>
+        <h2>Live Video Feed</h2>
+        <img src="{{ url_for('capture') }}" style="width: 100%; height: auto;">
+    </div>
+</body>
+</html>
